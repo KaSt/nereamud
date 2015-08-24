@@ -1,0 +1,90 @@
+Aug 24 14:02:48: Changing to lib directory.
+Aug 24 14:02:48: Initializing hooks.
+Aug 24 14:02:48: Initializing bitvectors.
+Aug 24 14:02:48: Initializing races and default bodies.
+Aug 24 14:02:48: Initializing inform system.
+Aug 24 14:02:48: Initializing room resets.
+Aug 24 14:02:48: Initializing MUD settings.
+Aug 24 14:02:48: Preparing auxiliary data for usage.
+Aug 24 14:02:48: Initializing command table.
+Aug 24 14:02:48: Initializing action handler.
+Aug 24 14:02:48: Initializing event handler.
+Aug 24 14:02:48: Initializing logging system.
+Aug 24 14:02:48: Initializing account and player database.
+Aug 24 14:02:48: Initializing OLC v2.0.
+Aug 24 14:02:48: Initializing item types.
+Aug 24 14:02:48: Initializing editor.
+Aug 24 14:02:48: Initializing dynamic variables.
+Aug 24 14:02:48: Initializing set utility.
+Aug 24 14:02:48: Initializing aliases.
+Aug 24 14:02:48: Initializing game time.
+Aug 24 14:02:48: Initializing socials.
+Aug 24 14:02:48: Initializing helpfiles.
+Aug 24 14:02:48: Initializing scripts.
+Aug 24 14:02:48: loading python module, __restricted_builtin__
+Aug 24 14:02:48: loading python module, __restricted_builtin_funcs__
+Aug 24 14:02:48: loading python module, account_handler
+Aug 24 14:02:48: loading python module, char_gen
+Aug 24 14:02:48: loading python module, cmd_admin
+Aug 24 14:02:48: loading python module, cmd_comm
+Aug 24 14:02:48: loading python module, cmd_inform
+Aug 24 14:02:48: loading python module, cmd_manip
+Aug 24 14:02:48: loading python module, cmd_misc
+Aug 24 14:02:48: loading python module, colour
+Aug 24 14:02:48: loading python module, display
+Aug 24 14:02:48: loading python module, doc
+Aug 24 14:02:48: loading python module, history
+Aug 24 14:02:48: loading python module, inform
+Aug 24 14:02:48: loading python module, movement
+Aug 24 14:02:48: loading python module, path
+Aug 24 14:02:48: loading python module, routine
+Aug 24 14:02:48: loading python module, utils
+Aug 24 14:02:48: Loading gameworld.
+Aug 24 14:02:48: Force-resetting world
+Aug 24 14:02:48: Initializing sockets.
+Aug 24 14:02:48: Entering game loop
+Aug 24 14:03:17: Changing to lib directory.
+Aug 24 14:03:17: Initializing hooks.
+Aug 24 14:03:17: Initializing bitvectors.
+Aug 24 14:03:17: Initializing races and default bodies.
+Aug 24 14:03:17: Initializing inform system.
+Aug 24 14:03:17: Initializing room resets.
+Aug 24 14:03:17: Initializing MUD settings.
+Aug 24 14:03:17: Preparing auxiliary data for usage.
+Aug 24 14:03:17: Initializing command table.
+Aug 24 14:03:17: Initializing action handler.
+Aug 24 14:03:17: Initializing event handler.
+Aug 24 14:03:17: Initializing logging system.
+Aug 24 14:03:17: Initializing account and player database.
+Aug 24 14:03:17: Initializing OLC v2.0.
+Aug 24 14:03:17: Initializing item types.
+Aug 24 14:03:17: Initializing editor.
+Aug 24 14:03:17: Initializing dynamic variables.
+Aug 24 14:03:17: Initializing set utility.
+Aug 24 14:03:17: Initializing aliases.
+Aug 24 14:03:17: Initializing game time.
+Aug 24 14:03:17: Initializing socials.
+Aug 24 14:03:17: Initializing helpfiles.
+Aug 24 14:03:17: Initializing scripts.
+Aug 24 14:03:17: loading python module, __restricted_builtin__
+Aug 24 14:03:17: loading python module, __restricted_builtin_funcs__
+Aug 24 14:03:17: loading python module, account_handler
+Aug 24 14:03:17: loading python module, char_gen
+Aug 24 14:03:17: loading python module, cmd_admin
+Aug 24 14:03:17: loading python module, cmd_comm
+Aug 24 14:03:17: loading python module, cmd_inform
+Aug 24 14:03:17: loading python module, cmd_manip
+Aug 24 14:03:17: loading python module, cmd_misc
+Aug 24 14:03:17: loading python module, colour
+Aug 24 14:03:17: loading python module, display
+Aug 24 14:03:17: loading python module, doc
+Aug 24 14:03:17: loading python module, history
+Aug 24 14:03:17: loading python module, inform
+Aug 24 14:03:17: loading python module, movement
+Aug 24 14:03:17: loading python module, path
+Aug 24 14:03:17: loading python module, routine
+Aug 24 14:03:17: loading python module, utils
+Aug 24 14:03:17: Loading gameworld.
+Aug 24 14:03:17: Force-resetting world
+Aug 24 14:03:17: Initializing sockets.
+Aug 24 14:03:17: Entering game loop
