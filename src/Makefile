@@ -35,7 +35,13 @@ MODULES += time socials alias help2 persistent quest dialog stats webserver
 C_FLAGS := -Wall -g -ggdb -O2 -I/usr/include/python2.7
 
 # extra libraries if required
-LIBS    := -lz -lpthread #-lcrypt
+LIBS    := -lz -lpthread
+
+# in case we're not building on a Mac but on Linux
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Linux)
+   C_FLAGS += -lcrypt
+endif
 
 # each module will add to this from its module.mk file
 SRC     := gameloop.c mud.c utils.c interpret.c handler.c inform.c \
@@ -80,8 +86,8 @@ BACKUP_FILE := backup/$(PROJECT)-$(shell date +%Y-%m-%d-%Hh%Mm).tar.tgz
 ################################################################################
 all: $(O_FILES)
 	@$(CC) -o $(BINARY) $(O_FILES) $(LIBS)
-	@echo -e "$(COLOR)$(BINARY) successfully compiled."\
-		 "To run your mud, use ./$(BINARY) [port] &$(NOCOLOR)\n"\
+	@echo  "$(COLOR)$(BINARY) successfully compiled."\
+		"\nTo run your mud, use ./$(BINARY) [port] &$(NOCOLOR)\n"\
 
 # back up everything worth backing up
 backup: clean
