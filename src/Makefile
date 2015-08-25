@@ -39,8 +39,9 @@ LIBS    := -lz -lpthread
 
 # in case we're not building on a Mac but on Linux
 UNAME_S := $(shell uname -s)
-ifeq ($(UNAME_S),Linux)
+ifneq ($(UNAME_S),Darwin)
    C_FLAGS += -lcrypt
+   OTHER_BUILD = 1
 endif
 
 # each module will add to this from its module.mk file
