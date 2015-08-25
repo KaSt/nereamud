@@ -18,7 +18,7 @@
 // the rest of the MUD know that you've installed the module.
 //*****************************************************************************
 
-// mandatory modules. These are modules that the NakedMud core REQUIRES to run.
+// mandatory modules. These are modules that the NereaMud core REQUIRES to run.
 // They have simply been made modules for organizational ease.
 #define MODULE_ITEMS
 #define MODULE_OLC2
@@ -32,7 +32,7 @@
 #define MODULE_SOCIALS
 #define MODULE_HELP2
 #define MODULE_TIME
-
+#define MODULE_WEBSERVER
 
 
 //*****************************************************************************
@@ -116,7 +116,7 @@ typedef unsigned char                     bool;
 #define MAX_OUTPUT         8192                   /* well shoot me if it isn't enough   */
 #define FILE_TERMINATOR    "EOF"                  /* end of file marker                 */
 #define COPYOVER_FILE      "../.copyover.dat"     /* tempfile to store copyover data    */
-#define EXE_FILE           "../src/NakedMud"      /* the name of the mud binary         */
+#define EXE_FILE           "../src/NereaMud"      /* the name of the mud binary         */
 #define DEFAULT_PORT       4000                   /* the default port we run on */
 #define SCREEN_WIDTH       80                     // the width of a term screen
 #define PARA_INDENT        0                      // num of spaces to start para

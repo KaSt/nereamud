@@ -55,6 +55,7 @@ void init_commands() {
   add_cmd("look",       "l",  cmd_look,        "player", FALSE);
   add_cmd("more",       NULL, cmd_more,        "player", FALSE);
   add_cmd_check("look",        chk_conscious);
+  add_cmd("who",        NULL, cmd_who,  "player", FALSE);
 }
 
 bool cmd_exists(const char *cmd) {

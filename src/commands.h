@@ -15,5 +15,5 @@ COMMAND(cmd_look);
 COMMAND(cmd_groupcmds);
 COMMAND(cmd_more);
 COMMAND(cmd_back);
-
+COMMAND(cmd_who);
 #endif // __COMMANDS_H

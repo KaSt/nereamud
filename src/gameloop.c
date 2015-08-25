@@ -55,6 +55,9 @@
 #ifdef MODULE_ALIAS
 #include "alias/alias.h"
 #endif
+#ifdef MODULE_WEBSERVER
+#include "webserver/webserver.h"
+#endif
 
 
 // local procedures
@@ -263,6 +266,9 @@ int main(int argc, char **argv)
   init_help();
 #endif
 
+#ifdef MODULE_WEBSERVER
+  init_webserver();
+#endif
 
 
   /**********************************************************************/
@@ -424,7 +430,7 @@ void game_loop(int control)
 
     /*
      * Here we sleep out the rest of the pulse, thus forcing
-     * SocketMud(tm) (NakedMud) to run at PULSES_PER_SECOND pulses each second.
+     * SocketMud(tm) (NereaMud) to run at PULSES_PER_SECOND pulses each second.
      */
     gettimeofday(&new_time, NULL);
 

@@ -14,7 +14,7 @@ unsquelch = telnetlib.IAC + telnetlib.WONT + telnetlib.ECHO
 
 def check_acct_name(name):
     '''Makes sure an account name is valid'''
-    return (len(name) > 3 and len(name) < 13 and
+    return (len(name) > 1 and len(name) < 13 and
             name[0].isalpha() and name.isalnum())
 
 def login_method_prompt(sock):
@@ -91,7 +91,7 @@ def login_method_handler(sock, arg):
         elif not check_acct_name(args[1]):
             txt = "{cThat is an invalid account name. Your account name must "\
                   "only consist of characters and numbers, and it must be " \
-                  "4 and 12 characters in length. The first character MUST be "\
+                  "2 and 12 characters in length. The first character MUST be "\
                   "a letter. Please pick another.{n"
             sock.send(mud.format_string(txt, False))
 
@@ -262,28 +262,25 @@ def acct_main_menu(sock):
     line_buf = "%-38s" % " "
 
     # make the account menu look pretty
-    img = ["+--------------------------------------+",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|               I M A G E              |",
-           "|                H E R E               |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
-           "|                                      |",
+    img = ["+--------------------------------------+", 
+           "|                     .-----.          |",
+           "|           \ ' /   _/    )/           |",
+           "|          - ( ) -('---''--)           |",
+           "|           / . \((()\^_^/)()          |",
+           "|            \\_\ (()_)-((()()         |",
+           "|             '- \ )/\._./(()          |",
+           "|               '/\/( X   ) \          |",
+           "|               (___)|___/ ) \         |",
+           "|                    |.#_|(___)        |",
+           "|                    /\    \ ( (_      |",
+           "|                    \/\/\/\) \\       |",
+           "|                    | / \ |           |",
+           "|                    |(   \|           |",
+           "|                   _|_)__|_\_         |",
+           "|                   )...()...(         |",
+           "|                 | (   \ |            |",
+           "|    	     .-'__,)  (  \         |",
+           "|         mrf           '\_-,          |",
            "+--------------------------------------+"]
 
     # the lines for displaying our account options
@@ -310,8 +307,8 @@ def acct_main_menu(sock):
         opts.insert(0, line_buf)
 
     # append our title
-    opts.insert(1, "            {nW E L C O M E  T O        ")
-    opts.insert(2, "             {nN A K E D M U D          ")
+    opts.insert(1, "            {nW e l c o m e  T o        ")
+    opts.insert(2, "             {nN e r e a M u d          ")
             
     # display all of our info
     sock.send("")

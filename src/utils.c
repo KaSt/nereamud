@@ -179,7 +179,12 @@ void load_muddata() {
   worldSetPath(gameworld, WORLD_PATH);
   worldInit(gameworld);
 
-  greeting = read_file("../lib/txt/greeting");
+ if (!isatty(fileno(stdout))) { 
+  	greeting = read_file("../lib/txt/greeting"); 
+ } else {
+   greeting = read_file("../lib/txt/greeting_color"); 
+ }
+
   motd     = read_file("../lib/txt/motd");
 }
 
@@ -1693,3 +1698,4 @@ bool do_rename(CHAR_DATA *ch,const char *type,const char *from,const char *to) {
   // failed!
   return FALSE;
 }
+

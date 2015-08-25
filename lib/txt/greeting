@@ -1,9 +1,7 @@
 {n
-                 NakedMud(tm) v3.8, content-less MUD engine.
-
-                                  Created By
-                                 Geoff Hollis
-                            hollisgf@email.uc.edu
-
-                          Based on SocketMud(tm) by
-                               Brian Graversen
+                		 NereaMud 1.0 
+	
+			based on NakedMud(tm), SocketMud.
+                                     By
+      	  Geoff Hollis (hollisgf@email.uc.edu) and Brian Graversen
+				NereaMud by Ka

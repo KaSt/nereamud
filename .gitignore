@@ -1,2 +1,7 @@
 *.o
 *.d
+src/nereamud
+*.pyc
+log/*
+lib/accounts/*
+lib/players/*

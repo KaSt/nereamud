@@ -2,7 +2,7 @@
 //
 // bitvector.c
 //
-// One of the questions that came up when designing NakedMud is, how do we
+// One of the questions that came up when designing NereaMud is, how do we
 // efficiently implement bitvectors while maintaining the modularity of the mud?
 // For those unfamiliar with the purposes of a bitvector, let me elaborate:
 // there are many instances in which we may want to know about the presence or

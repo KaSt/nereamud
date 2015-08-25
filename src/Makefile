@@ -1,5 +1,5 @@
 ###############################################################################
-# makefile for nakedmud
+# makefile for nereamud
 #
 # Thanks go out to Tyche for bringing my attention to "Recursive Make Considered
 # Harmful" by Peter Miller. Many of the make conventions used in this makefile
@@ -14,7 +14,7 @@
 CC = gcc
 
 # the name of the binary file created that you will run to start your mud
-BINARY  := nakedmud
+BINARY  := nereamud
 
 # the name of the project - essentially, the executable sans capital letters
 PROJECT := $(shell echo $(BINARY) | tr A-Z a-z)
@@ -29,7 +29,7 @@ NOCOLOR := \x1B[0m
 MODULES := dyn_vars set_val olc2 editor items scripts
 
 # optional modules go on this line
-MODULES += time socials alias help2
+MODULES += time socials alias help2 persistent quest dialog stats webserver 
 
 # flags to use during compilation
 C_FLAGS := -Wall -g -ggdb -O2 -I/usr/include/python2.7

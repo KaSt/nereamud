@@ -516,6 +516,51 @@ COMMAND(cmd_commands) {
     show_commands(ch, arg);
 }
 
+//
+// builds a buffer that lists all of the people online.
+// Buffer must be deleted after it is used
+BUFFER *build_who(void) {
+  CHAR_DATA *plr;
+  SOCKET_DATA *dsock;
+  BUFFER *buf = newBuffer(MAX_BUFFER);
+  LIST_ITERATOR *sock_i = newListIterator(socket_list);
+  int socket_count = 0, playing_count = 0;
+
+  bprintf(buf,
+          "{cPlayers Online:\r\n"
+          "{gStatus   Race )\r\n"
+          );
+
+  // build our list of people online
+  ITERATE_LIST(dsock, sock_i) {
+    socket_count++;
+    if ((plr = socketGetChar(dsock)) == NULL) continue;
+    playing_count++;
+    bprintf(buf, "{y%-8s %-3s  {g)  {c%-12s {b%26s\r\n",
+            (bitIsSet(charGetUserGroups(plr), "admin") ? "admin" :
+             (bitIsSet(charGetUserGroups(plr), "scripter") ? "scripter" :
+              (bitIsSet(charGetUserGroups(plr), "builder") ? "builder"  :
+               (bitIsSet(charGetUserGroups(plr), "player") ? "player" :
+                "noone!")))),
+            raceGetAbbrev(charGetRace(plr)),
+            charGetName(plr), socketGetHostname(dsock));
+  } deleteListIterator(sock_i);
+
+  // send out info about the number of sockets and players logged on
+  bprintf(buf, "\r\n{g%d socket%s connected. %d playing.\r\n",
+          socket_count, (socket_count == 1 ? "" : "s"), playing_count);
+  return buf;
+}
+
+
+//
+// show the player all of the people who are currently playing
+COMMAND(cmd_who) {
+  BUFFER *buf = build_who();
+  page_string(charGetSocket(ch), bufferString(buf));
+  deleteBuffer(buf);
+}
+
 
 
 //*****************************************************************************
