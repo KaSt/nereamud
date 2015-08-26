@@ -38,7 +38,7 @@ C_FLAGS := -Wall -g -ggdb -O2 -I/usr/include/python2.7
 LIBS    := -lz -lpthread
 
 # in case we're not building on a Mac but on Linux
-UNAME_S := $(uname -s)
+UNAME_S := $(shell uname -s)
 ifneq ($(UNAME_S),Darwin)
    LIBS += -lcrypt
    OTHER_BUILD = 1
