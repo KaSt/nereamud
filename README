@@ -1,0 +1,18 @@
+NereaMud
+
+NereaMud is born from the will to have an old style game that keeps your mind busy like a book better than a movie.
+The choice went to a MUD game. Multi-User Dungeon. A game where people connect to the same server and can interact verbally. 
+A world that grows with you; people can contribute and create new rooms, new areas.
+
+This game model doesn't need a subscription nor crazy hardware for it to be enjoyed. Just some fantasy and creativity.
+
+The choice was hard to make but finally decided to go with NakedMud. The author, Geoff Hollis, based it on SocketMud (Brian Graversen),
+since he wanted to have a basic game server to extend at his will. 
+
+I chose NakedMud because it has all the basics of a mud game server, without the constraints of a fully finished mud codebase.
+Easy to extend with all the features that were added by Geoff Hollis, like Python and modules.
+
+Please see in the doc folder for the original README. 
+
+Stay tuned...
+
