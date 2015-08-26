@@ -87,6 +87,10 @@ void init_races() {
 
   // add the basic races
   add_race("human", "hum", body, TRUE);
+  add_race("elf", "elf", body, TRUE);
+  add_race("orc", "orc", body, TRUE);
+  add_race("fairy", "fair", body, TRUE);
+    
   //********************************************************************
   // If you are wanting to add new, non-stock races it is suggested
   // you do so through a module and import them with add_race instead
